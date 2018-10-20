@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>Audio Samples from &quot;Text-supervised Training for Sequence-to-Sequence Voice Conversion&quot;</h1>
+<p><strong>Author: </strong>Jing-Xuan Zhang, Zhen-Hua Ling, Li-Rong Dai</p>
+<p><strong>Abstract: </strong>Sequence-to-sequence voice conversion proposed in our previous work have been proven to achieve higher naturalness and similarity than conventional frame-to-frame method. In this paper, text transcriptions of parallel training data is assumed to be available. Methods of make using of text supervision to improve the perfor- mance of the sequence-to-sequence acoustic model is proposed. The first one method introduces secondary task for predicting linguis- tic labels under the framework of multi-task learning. Auxiliary classifiers are added at the middle layers of the model at training time. The second method is to randomly extract parallel fragments of original utterances during training for the purpose of data- augmentation. Proposed methods are investigated under different size of training data conditions. Both objective and subjective evaluations are conducted for comparing the baseline and proposed methods. Experimental results show that the multi-task learning method is effective for improving pronunciation correctness during conversion. Proposed data-augmentation method for seq2seq model can further improve the performance of the model when only 50 or 100 training utterances available.</p>
+<hr />
+<p>Female-Male Conversion</p>
+<p>text: 而我竟感觉有一种难以言说的忧伤涌上心头。</p>
+<p>er2 wo3 jing4 gan3 jue2 you3 yi4 zhong3 nan2 yi3 yan2 shuo1 de0 you1 shang1 yong3 shang4 xin1 tou2.</p>
+<table width="875" border="1">
+  <tr>
+    <td width="261">Size of training data</td>
+    <td width="261">seq2seq</td>
+    <td width="331">seq2seq-MT-DA</td>
+  </tr>
+  <tr>
+    <td>50 utterances</td>
+    <td><audio controls="controls">
+      <source src="wavs/male_50_seq2seq_erwo.wav" type="audio/wav" />
+    </audio></td>
+    <td><audio controls="controls">
+      <source src="wavs/male_50_seq2seq-MT-DA_erwo.wav" type="audio/wav" />
+    </audio></td>
+  </tr>
+</table>
+<table width="875" border="1">
+  <tr>
+    <td width="260">Size of training data</td>
+    <td width="259">seq2seq</td>
+    <td width="334">seq2seq-MT</td>
+  </tr>
+  <tr>
+    <td>1000 utterances</td>
+    <td><audio controls="controls">
+      <source src="wavs/male_1000_seq2seq_erwo.wav" type="audio/wav" />
+    </audio></td>
+    <td>
+    <audio controls="controls">
+      <source src="wavs/male_1000_seq2seq-MT_erwo.wav" type="audio/wav" />
+    </audio></td>
+  </tr>
+</table>
+<p>Male-Female Conversion </p>
+<p>text: 前方桥下侧丁字路口，准备进主路。</p>
+<p>qian2 fang1 qiao2 xia4 ce4 ding1 zi4 lu4 kou3, zhun3 bei4 jin4 zhu3 lu4.</p>
+<table width="875" border="1">
+  <tr>
+    <td width="252">Size of training data</td>
+    <td width="272">seq2seq</td>
+    <td width="329">seq2seq-MT-DA</td>
+  </tr>
+  <tr>
+    <td>50 utterances</td>
+    <td><audio controls="controls">
+      <source src="wavs/female_50_seq2seq_qianfang.wav" type="audio/wav" />
+    </audio></td>
+    <td><audio controls="controls">
+      <source src="wavs/female_50_seq2seq-MT-DA_qianfang.wav" type="audio/wav" />
+    </audio></td>
+  </tr>
+</table>
+<table width="875" border="1">
+  <tr>
+    <td width="255">Size of training data</td>
+    <td width="270">seq2seq</td>
+    <td width="328">seq2seq-MT</td>
+  </tr>
+  <tr>
+    <td>1000 utterances</td>
+    <td><audio controls="controls">
+      <source src="wavs/female_1000_seq2seq_qianfang.wav" type="audio/wav" />
+    </audio></td>
+    <td><audio controls="controls">
+      <source src="wavs/female_1000_seq2seq-MT_qianfang.wav" type="audio/wav" />
+    </audio></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
