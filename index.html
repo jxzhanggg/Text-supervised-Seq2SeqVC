@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>Text-supervised-Seq2seqVC</title>
 </head>
 
 <body>
-<h1>Audio Samples from &quot;Text-supervised Training for Sequence-to-Sequence Voice Conversion&quot;</h1>
+<h1>Audio Samples from &quot;IMPROVING SEQUENCE-TO-SEQUENCE VOICE CONVERSION BY ADDING
+TEXT-SUPERVISION&quot;</h1>
 <p><strong>Author: </strong>Jing-Xuan Zhang, Zhen-Hua Ling, Li-Rong Dai</p>
-<p><strong>Abstract: </strong>Sequence-to-sequence voice conversion proposed in our previous work have been proven to achieve higher naturalness and similarity than conventional frame-to-frame method. In this paper, text transcriptions of parallel training data is assumed to be available. Methods of make using of text supervision to improve the perfor- mance of the sequence-to-sequence acoustic model is proposed. The first one method introduces secondary task for predicting linguis- tic labels under the framework of multi-task learning. Auxiliary classifiers are added at the middle layers of the model at training time. The second method is to randomly extract parallel fragments of original utterances during training for the purpose of data- augmentation. Proposed methods are investigated under different size of training data conditions. Both objective and subjective evaluations are conducted for comparing the baseline and proposed methods. Experimental results show that the multi-task learning method is effective for improving pronunciation correctness during conversion. Proposed data-augmentation method for seq2seq model can further improve the performance of the model when only 50 or 100 training utterances available.</p>
+<p><strong>Abstract: </strong>This paper presents methods of making using of text supervision to improve the performance of sequence-to-sequence (seq2seq) voice conversion. Compared with conventional frame-to-frame voice conversion approaches, the seq2seq acoustic modeling method proposed in our previous work achieved higher naturalness and similarity. In this paper, we further improve its performance by utilizing the text transcriptions of parallel training data. First, a multi-task learning structure is designed which adds auxiliary classifiers to the middle layers of the seq2seq model and predicts linguistic labels as a secondary task. Second, a data-augmentation method is proposed which utilizes text alignment to produce extra parallel sequences for model training. Experiments are conducted to evaluate our proposed method with training sets at different sizes. Experimentalresultsshowthatthemulti-tasklearningwithlinguistic labels is effective at reducing the errors of seq2seq voice conversion. The data-augmentation method can further improve the performance of seq2seq voice conversion when only 50 or 100 training utterances are available.</p>
 <hr />
 <p>Female-Male Conversion</p>
 <p>text: 而我竟感觉有一种难以言说的忧伤涌上心头。</p>
